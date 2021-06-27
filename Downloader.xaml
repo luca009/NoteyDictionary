@@ -1,0 +1,14 @@
+﻿<Window x:Class="NoteyDictionary.Downloader"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NoteyDictionary"
+        mc:Ignorable="d"
+        Title="Downloader" Height="95" Width="293" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Please wait, downloading..." TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ProgressBar x:Name="pbarProgress" Height="20" Margin="10,0,10,10" VerticalAlignment="Bottom" IsIndeterminate="True"/>
+
+    </Grid>
+</Window>

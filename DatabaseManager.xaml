@@ -1,0 +1,36 @@
+﻿<Window x:Class="NoteyDictionary.DatabaseManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NoteyDictionary"
+        mc:Ignorable="d"
+        Title="Database Manager" Height="200" Width="395" ResizeMode="CanResize" MinWidth="405" MinHeight="165">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Choose the database to be loaded. If required, you can download one." TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ListBox Margin="10,30,10,10" HorizontalContentAlignment="Stretch" Padding="1,1,1,1">
+            <ListBoxItem Margin="1,1,1,1">
+                <Grid>
+                    <TextBlock Text="Lite (top 1000 words)" HorizontalAlignment="Left" />
+                    <Button Content="¤" HorizontalAlignment="Right" Margin="0,0,25,0" Tag="lite" Click="bDownload_Click" FontFamily="Wingdings 3" Width="20" />
+                    <Button Content="Use" HorizontalAlignment="Right" Tag="lite" Click="bUse_Click" />
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem Margin="1,1,1,1">
+                <Grid>
+                    <TextBlock Text="Full (excluding words with punctuation)" HorizontalAlignment="Left" />
+                    <Button Content="¤" HorizontalAlignment="Right" Margin="0,0,25,0" Tag="full_alpha" FontFamily="Wingdings 3" Click="bDownload_Click" Width="20" />
+                    <Button Content="Use" HorizontalAlignment="Right" Tag="full_alpha" Click="bUse_Click" />
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem Margin="1,1,1,1">
+                <Grid>
+                    <TextBlock Text="Full (not recommended)" HorizontalAlignment="Left" />
+                    <Button Content="¤" HorizontalAlignment="Right" Margin="0,0,25,0" Tag="full" FontFamily="Wingdings 3" Click="bDownload_Click" Width="20" />
+                    <Button Content="Use" HorizontalAlignment="Right" Tag="full" Click="bUse_Click" />
+                </Grid>
+            </ListBoxItem>
+        </ListBox>
+
+    </Grid>
+</Window>
